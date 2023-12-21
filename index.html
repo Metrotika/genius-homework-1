@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title lang="en">Beauty Zone</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">
+            <a href="./index.html">
                 <img src="./images/logo.svg" alt="Логотип Beauty Zone">
             </a>
             <ul>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Чому ми</a></li>
-                <li><a href="#">Наші процедури</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a class="header-link" href="#about-as">Про нас</a></li>
+                <li><a class="header-link" href="#why-we">Чому ми</a></li>
+                <li><a class="header-link" href="#our-procedures">Наші процедури</a></li>
+                <li><a class="header-link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
         <button type="button">
@@ -33,12 +35,12 @@
     <main>
         <section>
             <p>Косметологічна клініка</p>
-            <h1 lang="en">Beauty Zone</h1>
-            <button type="button">Замовити дзвінок</button>
-            <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+            <h1 class="hero-title" lang="en">Beauty Zone</h1>
+            <button class="big-button" type="button">Замовити дзвінок</button>
+            <p class="text-under-big-button">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </section>
-        <section>
-            <h2>Перевтілюйтесь в <span lang="en">Beauty Zone!</span></h2>
+        <section id="about-as">
+            <h2>Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span></h2>
             <p>Наша косметологічна клініка пропонує вам професійні послуги
                 з догляду за шкірою обличчя та тіла.</p>
             <p>B <span lang="en">beauty zone</span> ми гарантуємо найвищі стандарти якості
@@ -48,76 +50,83 @@
             <img src="./images/face-before-procedure.jpg" alt="не красиве обличчя дівчини до процедури">
             <img src="./images/face-after-procedure.jpg" alt="красиве обличчя дівчини після процедури">
         </section>
-        <section>
-            <h2>Чому люди <span>обирають нас</span></h2>
+        <section id="why-we">
+            <h2>Чому люди <span class="accent">обирають нас</span></h2>
             <ul>
                 <li>
                     <article>
                         <img src="./images/science-icon.svg"
                             alt="іконка, яка підтверджуує знання та досвід наших косметологів, схематичне зображення атома з кубом всередині замість ядра">
-                        <h3>Всі наші косметологи мають вищу медичну освіту
+                        <h3 class="text-for-our-advantages">Всі наші косметологи мають вищу медичну освіту
                             та стаж роботи від 5 років</h3>
                     </article>
                 </li>
                 <li>
                     <article>
                         <img src="./images/medicine-cosmetics-bottle.svg" alt="медичні стакачики, бутилочки, дозатори">
-                        <h3>Використовуємо тільки професійне обладнання та косметику, перевірену часом</h3>
+                        <h3 class="text-for-our-advantages">Використовуємо тільки професійне обладнання та
+                            косметику, перевірену часом</h3>
                     </article>
                 </li>
                 <li>
                     <article>
                         <img src="./images/crown-light.svg" alt="зображення корони">
-                        <h3>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</h3>
+                        <h3 class="text-for-our-advantages">Наша мета - підкреслити переваги та приховати
+                            недоліки, а не переробити</h3>
                     </article>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Наші <span>процедури</span></h2>
+        <section id="our-procedures">
+            <h2>Наші <span class="accent">процедури</span></h2>
             <ul>
                 <li>
                     <article>
                         <img src="./images/procedure-fase-1.jpg" alt="обличчя дівчини з нанесеною маскою для обличчя">
-                        <h3>Маски для обличчя</h3>
+                        <h3 class="text-for-our-procedures">Маски для обличчя</h3>
                     </article>
                 </li>
                 <li>
                     <article>
                         <img src="./images/procedure-fase-2.jpg"
                             alt="обличчя жінки під-час косметологічного уколу шприцом між бров">
-                        <h3>Ін'єкції для обличчя</h3>
+                        <h3 class="text-for-our-procedures">Ін'єкції для обличчя</h3>
                     </article>
                 </li>
                 <li>
                     <article>
                         <img src="./images/procedure-fase-3.jpg" alt="обличчя жінки під-час очищення обличчя">
-                        <h3>Очищення обличчя </h3>
+                        <h3 class="text-for-our-procedures">Очищення обличчя </h3>
                     </article>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Як нас <span>знайти</span></h2>
+        <section id="contacts">
+            <h2>Як нас <span class="accent">знайти</span></h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.907155981198!2d30.5140975!3d50.441533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1702983181497!5m2!1suk!2sua"
+                width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
         <nav>
-            <a href="#">
+            <a href="./index.html">
                 <img src="./images/logo.svg" alt="Логотип Beauty Zone">
             </a>
             <ul>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Чому ми</a></li>
-                <li><a href="#">Наші процедури</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a class="link-bottom-nav" href="#why-we">Чому ми</a></li>
+                <li><a class="link-bottom-nav" href="#our-procedures">Наші процедури</a></li>
+                <li><a class="link-bottom-nav" href="#about-as">Про нас</a></li>
+                <li><a class="link-bottom-nav" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
         <address>
             <ul>
-                <li><a href="tel:+38(096)0000007">+ 38 (096) 000 00 07</a></li>
-                <li><a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/S2YZB89GkmpxDsNfA" target="_blank">Україна, м. Київ, вул. Тараса
+                <li><a class="link-bottom-address" href="tel:+38(096)0000007">+ 38 (096) 000 00 07</a></li>
+                <li><a class="link-bottom-address" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                <li><a class="link-bottom-address" href="https://maps.app.goo.gl/S2YZB89GkmpxDsNfA"
+                        target="_blank">Україна, м. Київ, вул. Тараса
                         Шевченка 5</a></li>
             </ul>
             <button type="button">
@@ -129,10 +138,10 @@
             <a href="#">
                 <img src="./images/instagram-icon.svg" alt="кнопка переходу на instagram]">
             </a>
-            <a href="#" target="_blank">
+            <a class="privacy-policy" href="#" target="_blank">
                 Політика конфіденційності
             </a>
-            <p>&copy; 2023 Дані захищені</p>
+            <p class="copyright">&copy; 2023 Дані захищені</p>
         </address>
         <img src="./images/bottom-pipette.jpg"
             alt="two medicine bottle with wite label and pippet with black water on opened bottle">

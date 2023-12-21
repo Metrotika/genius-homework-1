@@ -1,0 +1,84 @@
+/*Base*/
+:root {
+    --color-main-dark: #011c44;
+    --color-main-accent: #2b7fff;
+    --color-main-light: white;
+    --color-secondary: black;
+}   
+body{
+    background-color: #d6e362;
+    color: var(--color-main-dark);
+}
+h2 span.accent {
+    color: var(--color-main-accent);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*Button*/
+.big-button { 
+    color: var(--color-main-light);
+    background-color: var(--color-main-accent);
+    border: 2px solid var(--color-main-accent);
+    border-radius: 32px;
+    cursor: pointer;
+}
+.big-button:hover {
+    color: var(--color-main-dark);
+    background-color: transparent;
+}
+
+/*Header*/
+a.header-link {
+    color: var(--color-main-dark);
+}
+a.header-link:hover {
+    color: var(--color-main-accent);
+}
+.text-under-big-button {
+    color: #4a4a4a;
+}
+
+/*Main*/
+/*Hero-section*/
+.hero-title {
+    color: var(--color-main-accent);
+}
+/*About-as-section*/
+
+/*why-we-section*/
+.text-for-our-advantages {
+    color: black;
+}
+/*our-procedures-section*/
+.text-for-our-procedures {
+    color: var(--color-main-light);
+}
+/*contacts-section*/
+
+/*Footer*/
+.link-bottom-nav{
+    color: var(--color-main-light);
+}
+.link-bottom-nav:hover {
+    color:var(--color-main-accent);
+}
+.link-bottom-address {
+    color: var(--color-main-light);
+}
+.link-bottom-address:hover {
+    color: var(--color-main-accent);
+}
+.privacy-policy{
+    color: var(--color-main-light);
+}
+.privacy-policy:hover {
+    color: var(--color-main-accent);
+}
+.copyright {
+    color: #747272;
+}
