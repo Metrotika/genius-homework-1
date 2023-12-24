@@ -1,16 +1,51 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-cyrillic-ext_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-cyrillic-ext_latin-500.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-cyrillic-ext_latin-700.woff2') format('woff2');
+}
 /*Base*/
 :root {
     --color-main-dark: #011c44;
     --color-main-accent: #2b7fff;
     --color-main-light: white;
-    --color-secondary: black;
+    --color-secondary-black: black;
+    --color-secondary-dark-gray: 4a4a4a;
+    --color-secondary-light-gray: 747272;
+    --color-secondary-dark-violet: 011f4a;
+    --color-secondary-yelow: ffd02b;
 }   
 body{
     background-color: #d6e362;
     color: var(--color-main-dark);
-}
-h2 span.accent {
-    color: var(--color-main-accent);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1,5;
+    font-weight: 400;
 }
 ul {
     list-style-type: none;
@@ -26,59 +61,106 @@ a {
     border: 2px solid var(--color-main-accent);
     border-radius: 32px;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
 }
 .big-button:hover {
     color: var(--color-main-dark);
     background-color: transparent;
 }
-
 /*Header*/
 a.header-link {
     color: var(--color-main-dark);
+    line-height: 1.17;
 }
 a.header-link:hover {
     color: var(--color-main-accent);
+    font-weight: 700;
 }
-.text-under-big-button {
-    color: #4a4a4a;
-}
-
 /*Main*/
 /*Hero-section*/
+.text-higher-hero-title {
+    line-height: 1.17;
+}
 .hero-title {
     color: var(--color-main-accent);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    line-height: 0.8;
+    font-weight: 700;
+}
+.text-under-big-button {
+    color: var(--color-secondary-dark-gray);
+    line-height: 1.5;
 }
 /*About-as-section*/
-
+.about-as-section {
+    font-size: 22px;
+    line-height: 1.73;
+}
+h2{
+    font-family: "Play", sans-serif;
+    font-size: 64px;
+    line-height: 1.16;
+    font-weight: 700;
+}
+h2 span.accent {
+    color: var(--color-main-accent);
+}
+.accent-bold {
+    text-transform: capitalize;
+    font-weight: 700;
+}
 /*why-we-section*/
 .text-for-our-advantages {
-    color: black;
+    color: var(--color-secondary-black);
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 400;
 }
 /*our-procedures-section*/
 .text-for-our-procedures {
     color: var(--color-main-light);
+    font-size: 22px;
+    line-height: 1.19;
+    font-weight: 400;
 }
 /*contacts-section*/
+.contacts-secton h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    line-height: 1.19;
+    font-weight: 700;
+}
+.accent-h3{
+    color: var(--color-main-accent);
+}
+.clarifying {
+    color: var(--color-secondary-light-gray);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.clarifying-the-privacy-policy{
+    color: var(--color-secondary-light-gray);
+    text-decoration: underline;
+}
+
 
 /*Footer*/
 .link-bottom-nav{
     color: var(--color-main-light);
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 400;
 }
 .link-bottom-nav:hover {
     color:var(--color-main-accent);
-}
-.link-bottom-address {
-    color: var(--color-main-light);
-}
-.link-bottom-address:hover {
-    color: var(--color-main-accent);
-}
-.privacy-policy{
-    color: var(--color-main-light);
-}
-.privacy-policy:hover {
-    color: var(--color-main-accent);
+    font-weight: 700;
 }
 .copyright {
-    color: #747272;
+    color: var(--color-secondary-light-gray);
+    font-size: 13px;
+    line-height: 1.15;
 }
