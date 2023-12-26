@@ -39,13 +39,27 @@
     --color-secondary-dark-violet: 011f4a;
     --color-secondary-yelow: ffd02b;
 }   
+*{
+    box-sizing: border-box;
+}
+.conteiner{
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%; 
+    max-width: 1488px;
+    
+}
 body{
+    margin: 0;
     background-color: #d6e362;
     color: var(--color-main-dark);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    line-height: 1,5;
     font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 ul {
     list-style-type: none;
@@ -53,9 +67,35 @@ ul {
 a {
     text-decoration: none;
 }
-
-/*Button*/
-.big-button { 
+/*Header*/
+a.header-link {
+    color: var(--color-main-dark);
+    line-height: 1.17;
+}
+a.header-link:hover {
+    color: var(--color-main-accent);
+    font-weight: 700;
+}
+/*Main*/
+/*Hero-section*/
+.hero-section {
+    padding-top: 123px;
+}
+.text-higher-hero-title {
+    margin-bottom: 16px;
+    line-height: 1.17;
+}
+.hero-title {
+    margin-bottom: 40px;
+    color: var(--color-main-accent);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    line-height: 0.8;
+    font-weight: 700;
+}
+.big-button {
+    margin-bottom: 14px;
+    padding: 16px 32px;
     color: var(--color-main-light);
     background-color: var(--color-main-accent);
     border: 2px solid var(--color-main-accent);
@@ -69,28 +109,8 @@ a {
     color: var(--color-main-dark);
     background-color: transparent;
 }
-/*Header*/
-a.header-link {
-    color: var(--color-main-dark);
-    line-height: 1.17;
-}
-a.header-link:hover {
-    color: var(--color-main-accent);
-    font-weight: 700;
-}
-/*Main*/
-/*Hero-section*/
-.text-higher-hero-title {
-    line-height: 1.17;
-}
-.hero-title {
-    color: var(--color-main-accent);
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    line-height: 0.8;
-    font-weight: 700;
-}
 .text-under-big-button {
+    margin-bottom: 166px;
     color: var(--color-secondary-dark-gray);
     line-height: 1.5;
 }
@@ -112,7 +132,22 @@ h2 span.accent {
     text-transform: capitalize;
     font-weight: 700;
 }
+.about-us-title{
+    margin-bottom: 40px;
+}
+.about-us-first-p{
+    margin-bottom: 40px;
+}
+.about-us-second-p{
+    margin-bottom: 375px;
+}
 /*why-we-section*/
+.why-we-title{
+    margin-bottom: 48px;
+}
+.conteiner-why-we{
+    margin-bottom: 96px;
+}
 .text-for-our-advantages {
     color: var(--color-secondary-black);
     font-size: 18px;
@@ -120,6 +155,12 @@ h2 span.accent {
     font-weight: 400;
 }
 /*our-procedures-section*/
+.conteiner-our-procedures{
+    margin-bottom: 96px;
+}
+.our-procedures-title{
+    margin-bottom: 48px;
+}
 .text-for-our-procedures {
     color: var(--color-main-light);
     font-size: 22px;
@@ -127,16 +168,40 @@ h2 span.accent {
     font-weight: 400;
 }
 /*contacts-section*/
-.contacts-secton h3 {
+.conteiner-contacts{
+    margin-bottom: 96px;
+}
+.contakts-title{
+    margin-bottom: 48px;
+}
+.form-title {
     font-family: "Roboto", sans-serif;
     font-size: 22px;
     line-height: 1.19;
     font-weight: 700;
+    margin-bottom: 32px;
 }
 .accent-h3{
     color: var(--color-main-accent);
 }
+.second-big-button {
+    margin-bottom: 8px;
+    padding: 16px 32px;
+    color: var(--color-main-light);
+    background-color: var(--color-main-accent);
+    border: 2px solid var(--color-main-accent);
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+}
+.second-big-button:hover {
+    color: var(--color-main-dark);
+    background-color: transparent;
+}
 .clarifying {
+    margin-bottom: 48px;
     color: var(--color-secondary-light-gray);
     font-size: 12px;
     line-height: 1.5;
@@ -149,7 +214,11 @@ h2 span.accent {
 
 
 /*Footer*/
+.conteiner-footer{
+    padding: 56px 0;
+}
 .link-bottom-nav{
+    margin-bottom: 16px;
     color: var(--color-main-light);
     font-size: 16px;
     line-height: 1.19;
