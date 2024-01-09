@@ -284,6 +284,22 @@ h2 span.accent {
     line-height: 1.19;
     font-weight: 400;
 }
+/* Carousel */
+.carousel-button{
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    border-radius: 50%;
+}
+.carousel-arrow{
+    fill: var(--color-main-darks);
+    border: 1px solid var(--color-main-dark);
+    border-radius: 50%;
+}
 /*contacts-section*/
 .conteiner-contacts{
     margin-bottom: 96px;
