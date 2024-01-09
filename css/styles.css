@@ -47,7 +47,7 @@
     padding: 0 24px;
     width: 100%; 
     max-width: 1488px;
-    background-color: aquamarine;
+    background-color: #e6520de3;
 }
 body{
     margin: 0;
@@ -68,6 +68,7 @@ ul {
 }
 a {
     text-decoration: none;
+    display: inline-block;
 }
 /*Header*/
 a.header-link {
@@ -77,10 +78,25 @@ a.header-link {
 a.header-link:hover {
     color: var(--color-main-accent);
 }
-.mini-button{
+.header-telephone-button{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
     background-color: transparent;
-    border: 0px;
     padding: 0;
+    border: 0px;
+}
+.telephone-icons{
+    fill: var(--color-main-dark)
+}
+.telephone-icons:hover{
+    fill: var(--color-main-accent)
+}
+.social-icons{
+    fill: var(--color-main-dark)
+}
+.social-icons:hover{
+    fill: var(--color-main-accent)
 }
 .conteiner-header-flex{
     width: 100%;
@@ -107,6 +123,13 @@ a.header-link:hover {
 /*Hero-section*/
 
 .hero-section {
+    background-image: url("../images/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 1152px 687px; */
+    /* background-position: 350px 1px; */
+}
+.hero-section-conteiner{
     width: 100%;
     max-width: 529px;
     padding-top: 123px;
@@ -152,35 +175,39 @@ a.header-link:hover {
 }
 /*About-as-section*/
 .conteiner-about-as{
-    display: flex;
-    margin-left: 100px;
+    margin: 0px 100px;
+    margin-bottom: 176px;
 }
-.about-as-section {
+.about-as-section-flex {
     font-size: 22px;
     line-height: 1.73;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 176px;
+    gap: 28px;
 }
 .about-as-text-conteiner-flex{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 100%;
-    max-width: 709px;
+    padding-top: 40px;
+    flex-basis: 709px;
 }
-.about-as-ims-conteiner-flex{
+.about-as-imgs-conteiner-flex{
     display: flex;
-    /* display: inline-flex; */
-    /* align-items: flex-start; */
-    width: 100%;
-    max-width: 515px;
-    flex-wrap: wrap;
-    gap: 40px 0;
+    flex-flow: row wrap;
+    flex-basis: 503px;
+    height: 695px;
+    align-content: space-between;
+    flex-grow: 0;
 }
-.medium-star {
-    align-self: flex-start;
-    margin: 33px 0 0 140px;
+.face-before-procedure{
+    display: flex;
+    flex-basis: 100%;
+    justify-self: start;
+}
+.face-after-procedure{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: end;
 }
 h2{
     font-family: "Play", sans-serif;
@@ -196,12 +223,12 @@ h2 span.accent {
     font-weight: 700;
 }
 /*why-we-section*/
+.conteiner-why-we{
+    margin-bottom: 96px;
+}
 .why-we-title{
     margin-bottom: 48px;
     text-align: center;
-}
-.conteiner-why-we{
-    margin-bottom: 96px;
 }
 .formats-list-flex{
     display: flex;
@@ -210,13 +237,16 @@ h2 span.accent {
     justify-content: center;
 }
 .formats-item{
+    background-color: var(--color-main-light);
+    border-radius: 32px;
     padding: 24px 32px;
-    /* flex-basis: calc((100%-1000)/3); */
     flex-basis: 316px;
     text-align: center;
 }
-/* .format-card{
-} */
+.formats-article{
+    flex-direction: column;
+    gap: 8px;
+}
 .text-for-our-advantages {
     color: var(--color-secondary-black);
     font-size: 18px;
@@ -239,10 +269,14 @@ h2 span.accent {
     justify-content: center;
 }
 .formats-item-proceddures{
+    height: 456px;
     flex-basis: 344px;
-}
-/* .format-card-procedure{
     padding: 24px 32px;
+    background-image: linear-gradient(180deg, #011c4400 48%, #011c44ba 84%, #011C44 100%);
+    border-radius: 4px 120px;
+    border-radius: 120px 4px;
+}
+/* .format-card-procedures{
 } */
 .text-for-our-procedures {
     color: var(--color-main-light);
@@ -267,6 +301,7 @@ h2 span.accent {
 .contacts-form-flex{
     display: flex;
     flex-direction: column;
+    background-color: var(--color-main-dark);
 }
 .form-title {
     font-family: "Roboto", sans-serif;
@@ -314,6 +349,7 @@ h2 span.accent {
     flex-basis: 1239px;
     gap: 186px;
     justify-content: center;
+    background-color: var(--color-main-dark);
 }
 .footer-columns-size{
     flex-basis: 203px;
@@ -328,6 +364,20 @@ h2 span.accent {
     flex-direction: row;
     gap: 24px;
     justify-content: start;
+}
+.footer-svg-social-link{
+    fill: var(--color-main-light);
+}
+.footer-svg-social-link:hover{
+    fill: var(--color-main-accent);
+}
+.footer-telephone-button {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    padding: 0;
+    border: 0px;
 }
 .link-bottom-nav{
     color: var(--color-main-light);
