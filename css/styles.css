@@ -34,12 +34,12 @@
     --color-main-accent: #2b7fff;
     --color-main-light: white;
     --color-secondary-black: black;
-    --color-secondary-dark-gray: 4a4a4a;
-    --color-secondary-light-gray: 747272;
-    --color-secondary-dark-violet: 011f4a;
-    --color-secondary-yelow: ffd02b;
+    --color-secondary-dark-gray: #4a4a4a;
+    --color-secondary-light-gray: #747272;
+    --color-secondary-dark-violet: #011f4a;
+    --color-secondary-yelow: #ffd02b;
 }   
-*{
+*, ::after, ::before{
     box-sizing: border-box;
 }
 .root-conteiner{
@@ -254,17 +254,22 @@ h2 span.accent {
     font-weight: 400;
 }
 /*our-procedures-section*/
-.conteiner-our-procedures{
+.our-procedures-conteiner{
     margin: 0 auto 96px auto;
-    max-width: 1216px;
+    padding: 0px 112px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 .our-procedures-title {
-    margin-bottom: 48px;
     text-align: center;
 }
+
 .formats-list-procedures{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    flex-basis: 100%;
     gap: 16px;
     justify-content: center;
 }
@@ -274,10 +279,7 @@ h2 span.accent {
     padding: 24px 32px;
     background-image: linear-gradient(180deg, #011c4400 48%, #011c44ba 84%, #011C44 100%);
     border-radius: 4px 120px;
-    border-radius: 120px 4px;
 }
-/* .format-card-procedures{
-} */
 .text-for-our-procedures {
     color: var(--color-main-light);
     font-size: 22px;
@@ -285,20 +287,31 @@ h2 span.accent {
     font-weight: 400;
 }
 /* Carousel */
+.carousel-conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
 .carousel-button{
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    background-color: transparent;
     padding: 0;
     margin: 0;
-    border: 0px;
     border-radius: 50%;
-}
-.carousel-arrow{
-    fill: var(--color-main-darks);
     border: 1px solid var(--color-main-dark);
-    border-radius: 50%;
+    fill: var(--color-main-dark);
+    background-color: var(--color-main-light);
+    cursor: pointer;
+}
+.carousel-button:hover{
+border: 1px solid var(--color-main-light);
+background-color: var(--color-main-accent);
+fill: var(--color-main-light);
 }
 /*contacts-section*/
 .conteiner-contacts{
@@ -365,7 +378,6 @@ h2 span.accent {
     flex-basis: 1239px;
     gap: 186px;
     justify-content: center;
-    background-color: var(--color-main-dark);
 }
 .footer-columns-size{
     flex-basis: 203px;
@@ -405,7 +417,26 @@ h2 span.accent {
     color:var(--color-main-accent);
 }
 .copyright {
-    color: var(--color-secondary-light-gray);
+    color: var(--color-secondary-dark-gray);
     font-size: 13px;
     line-height: 1.15;
+}
+.footer{
+    position: relative;
+    background-color: var(--color-main-dark);
+    background-image: url("../images/footer-svg-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::after{
+    position: absolute;
+    width: 278px;
+    height: 213px;
+    right: -31px;
+    bottom: -61px;
+    background-repeat: no-repeat;
+    background-image: url("../images/bottom-pipette.png");
+    content: '';
 }
