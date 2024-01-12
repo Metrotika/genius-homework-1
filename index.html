@@ -24,7 +24,7 @@
                         <li><a class="header-link" href="#contacts">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="header-telephone-button" type="button">
+                <button class="header-telephone-button modal-btn-open" type="button">
                     <svg class="telephone-icons" width="32px" height="32px">
                         <use href="./images/icons.svg#icon-telephone-receiver"></use>
                     </svg>
@@ -213,7 +213,7 @@
                                 м. Київ, вул. Тараса Шевченка 5</a></li>
                         <li>
                             <div class="footer-social-media-buttons-flex">
-                                <button class="footer-telephone-button" type="button">
+                                <button class="footer-telephone-button modal-btn-open" type="button">
                                     <svg class="footer-svg-social-link" width="42" height="42">
                                         <use href="./images/icons.svg#icon-telephone-receiver"></use>
                                     </svg>
@@ -240,8 +240,14 @@
                 </div>
             </div>
         </footer>
-    </div>
 
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <button class="modal-btn-close" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

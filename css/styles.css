@@ -121,13 +121,12 @@ a.header-link:hover {
 }
 /*Main*/
 /*Hero-section*/
-
 .hero-section {
     background-image: url("../images/hero-background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    /* background-size: 1152px 687px; */
-    /* background-position: 350px 1px; */
+    /* background-size: contain; */
+    background-position: 350px 0px;
+    background-size: 1152px 687px;
 }
 .hero-section-conteiner{
     width: 100%;
@@ -164,7 +163,7 @@ a.header-link:hover {
     background-color: transparent;
 }
 .text-under-big-button {
-    margin-bottom: 166px;
+    padding-bottom: 166px;
     color: var(--color-secondary-dark-gray);
     line-height: 1.5;
     font-size: 12px;
@@ -331,6 +330,10 @@ fill: var(--color-main-light);
     display: flex;
     flex-direction: column;
     background-color: var(--color-main-dark);
+    background-image: url("../images/contacts-form-backgraund.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .form-title {
     font-family: "Roboto", sans-serif;
@@ -369,7 +372,6 @@ fill: var(--color-main-light);
     color: var(--color-secondary-light-gray);
     text-decoration: underline;
 }
-
 
 /*Footer*/
 .conteiner-footer-flex{
@@ -424,12 +426,11 @@ fill: var(--color-main-light);
 .footer{
     position: relative;
     background-color: var(--color-main-dark);
-    background-image: url("../images/footer-svg-background.svg");
+    background-image: url("../images/footer-svg-backgraund.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 .footer::after{
     position: absolute;
     width: 278px;
@@ -439,4 +440,36 @@ fill: var(--color-main-light);
     background-repeat: no-repeat;
     background-image: url("../images/bottom-pipette.png");
     content: '';
+}
+
+/* .backdrop{ */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 31, 74, 0.40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backdrop.is-hidden{
+    display: none;
+}
+.modal{
+    position: relative;
+    width: 723px;
+    height: 681px;
+    background-color: var(--color-main-dark);
+    border-radius: 48px;
+    background-image: url("../images/modal-svg-backgraund.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.modal-btn-close{
+    position: absolute;
+    top: 42px;
+    right: 42px;
 }
