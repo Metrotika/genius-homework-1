@@ -11,46 +11,42 @@
 
 <body>
     <div class="root-conteiner">
-        <header>
-            <div class="conteiner-header-flex">
-                <nav class="header-nav-flex">
-                    <a href="./index.html">
-                        <img src="./images/logo.svg" alt="Логотип Beauty Zone">
-                    </a>
-                    <ul class="header-menu-flex">
-                        <li><a class="header-link" href="#about-as">Про нас</a></li>
-                        <li><a class="header-link" href="#why-we">Чому ми</a></li>
-                        <li><a class="header-link" href="#our-procedures">Наші процедури</a></li>
-                        <li><a class="header-link" href="#contacts">Контакти</a></li>
-                    </ul>
-                </nav>
-                <button class="header-telephone-button modal-btn-open" type="button">
-                    <svg class="telephone-icons" width="32px" height="32px">
-                        <use href="./images/icons.svg#icon-telephone-receiver"></use>
-                    </svg>
-                </button>
-                <a href="#">
-                    <svg class="social-icons" width="32" height="32">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+        <header class="header">
+            <nav class="header-nav-flex">
+                <a href="./index.html">
+                    <img src="./images/logo.svg" alt="Логотип Beauty Zone">
                 </a>
-                <a href="#">
-                    <svg class="social-icons" width="32" height="32">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </div>
+                <ul class="header-menu-flex">
+                    <li><a class="header-link" href="#about-as">Про нас</a></li>
+                    <li><a class="header-link" href="#why-we">Чому ми</a></li>
+                    <li><a class="header-link" href="#our-procedures">Наші процедури</a></li>
+                    <li><a class="header-link" href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <button class="header-telephone-button modal-btn-open" type="button">
+                <svg width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-telephone-receiver"></use>
+                </svg>
+            </button>
+            <a class="social-icons" href="#">
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a class="social-icons" href="#">
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
         </header>
         <main>
             <section class="hero-section">
-                <div class="hero-section-conteiner">
-                    <p class="text-higher-hero-title">Косметологічна клініка</p>
-                    <h1 class="hero-title" lang="en">Beauty Zone</h1>
-                    <button class="big-button" type="button">Замовити дзвінок</button>
-                    <div class="conteiner-text-under-big-button">
-                        <p class="text-under-big-button">Запишись та отримай безкоштовну консультацію нашого
-                            косметолога</p>
-                    </div>
+                <p class="text-higher-hero-title">Косметологічна клініка</p>
+                <h1 class="hero-title" lang="en">Beauty Zone</h1>
+                <button class="big-button" type="button">Замовити дзвінок</button>
+                <div class="conteiner-text-under-big-button">
+                    <p class="text-under-big-button">Запишись та отримай безкоштовну консультацію нашого
+                        косметолога</p>
                 </div>
             </section>
             <div class="conteiner-about-as">
@@ -66,10 +62,12 @@
                     </div>
                     <div class="about-as-imgs-conteiner-flex">
                         <div class="face-before-procedure">
-                            <img src="./images/face-before-procedure.jpg" alt="не красиве обличчя дівчини до процедури">
+                            <img class="face-before-procedure-img" src="./images/face-before-procedure.jpg"
+                                alt="не красиве обличчя дівчини до процедури">
                         </div>
                         <div class="face-after-procedure">
-                            <img src="./images/face-after-procedure.jpg" alt="красиве обличчя дівчини після процедури">
+                            <img class="face-after-procedure-img" src="./images/face-after-procedure.jpg"
+                                alt="красиве обличчя дівчини після процедури">
                         </div>
                     </div>
                 </section>
@@ -123,7 +121,6 @@
             <section id="our-procedures-section">
                 <div class="our-procedures-conteiner">
                     <h2 class="our-procedures-title">Наші <span class="accent">процедури</span></h2>
-
                     <div class="carousel-conteiner">
                         <button class="carousel-button" type="button">
                             <svg width="44px" height="44px">
@@ -159,7 +156,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <button class="carousel-button" type="button">
+                        <button class="carousel-button next" type="button">
                             <svg class="carousel-arrow" width="44px" height="44px">
                                 <use href="./images/icons.svg#icon-mini-arrow"></use>
                             </svg>
@@ -213,18 +210,19 @@
                                 м. Київ, вул. Тараса Шевченка 5</a></li>
                         <li>
                             <div class="footer-social-media-buttons-flex">
-                                <button class="footer-telephone-button modal-btn-open" type="button">
-                                    <svg class="footer-svg-social-link" width="42" height="42">
+                                <button class="footer-telephone-button footer-svg-social-link modal-btn-open"
+                                    type="button">
+                                    <svg width="42" height="42">
                                         <use href="./images/icons.svg#icon-telephone-receiver"></use>
                                     </svg>
                                 </button>
-                                <a href="#">
-                                    <svg class="footer-svg-social-link" width="42" height="42">
+                                <a class="footer-svg-social-link" href="#">
+                                    <svg width="42" height="42">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
-                                <a href="#">
-                                    <svg class="footer-svg-social-link" width="42" height="42">
+                                <a class="footer-svg-social-link" href="#">
+                                    <svg width="42" height="42">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
