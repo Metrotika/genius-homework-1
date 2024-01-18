@@ -169,6 +169,7 @@ button {
     color: var(--color-secondary-dark-gray);
     line-height: 1.5;
     font-size: 12px;
+    text-align: center;
 }
 .conteiner-text-under-big-button{
     width: 100%;
@@ -223,7 +224,7 @@ h2{
     line-height: 1.16;
     font-weight: 700;
 }
-h2 span.accent {
+.accent {
     color: var(--color-main-accent);
 }
 .accent-bold {
@@ -345,9 +346,18 @@ h2 span.accent {
     gap: 32px;
     justify-content: center;
 }
+.contact-section_map{
+    border: 0px;
+    border-radius: 32px;
+}
+/* form */
 .contacts-form-flex{
     display: flex;
+    flex-basis: 423px;
+    max-height: 481px;
     flex-direction: column;
+    padding: 48px 56px;
+    border-radius: 32px;
     background-color: var(--color-main-dark);
     background-image: url("../images/contacts-form-backgraund.svg");
     background-repeat: no-repeat;
@@ -359,10 +369,14 @@ h2 span.accent {
     font-size: 22px;
     line-height: 1.19;
     font-weight: 700;
+    color: var(--color-main-light);
+    text-align: center;
     margin-bottom: 32px;
+
 }
-.accent-h3{
-    color: var(--color-main-accent);
+.contact-form-field {
+    margin-bottom: 16px;
+    max-height: 52px;
 }
 .second-big-button {
     margin-bottom: 8px;
@@ -372,20 +386,24 @@ h2 span.accent {
     border: 2px solid var(--color-main-accent);
     border-radius: 32px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
 }
 .second-big-button:hover {
-    /* color: var(--color-main-dark); */
     background-color: transparent;
 }
 .clarifying {
-    margin-bottom: 48px;
+    display: block;
+    margin: 0 auto;
+    /* margin-bottom: 48px; */
     color: var(--color-secondary-light-gray);
     font-size: 12px;
     line-height: 1.5;
     font-weight: 400;
+    max-width: 213px;
+    text-align: center;
 }
 .clarifying-the-privacy-policy{
     color: var(--color-secondary-light-gray);
@@ -485,20 +503,82 @@ h2 span.accent {
     pointer-events: none;
 }
 .modal{
+    color: white; /*delete*/
     position: relative;
     width: 100%;
     max-width: 723px;
     height: 100%;
-    max-height: 681px;
+    max-height: 690px;
+    padding: 42px 144px;
     background-color: var(--color-main-dark);
     border-radius: 48px;
     background-image: url("../images/modal-svg-backgraund.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: auto;
 }
 .modal-btn-close{
     position: absolute;
+    width: 32px;
+    height: 32px;
+    padding: ;
     top: 42px;
     right: 42px;
+    border: 0px;
+    background-color: transparent;
+    fill: transparent;
+    cursor: pointer;
+}
+
+/* form */
+.form-field{
+    margin-bottom: 24px;
+}
+.form-label{
+    display: block;
+}
+.form-input {
+    padding: 18px 32px;
+    width: 100%;
+    border: 2px solid var(--color-secondary-light-gray);
+    border-radius: 32px;
+    background-color: transparent;
+    color: var(--color-main-light);
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 1.15;
+    font-weight: 400;
+}
+.form-input:focus{
+    background-color: var(--color-secondary-light-gray);
+    outline: none;
+}
+.form-input::placeholder {
+    color: var(--color-main-light);
+}
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.modal-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.call-to-action-text{
+    font-size: 22px;
+    line-height: 1.18;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.button-form-align{
+    display: block;
+    margin: 0px auto 8px auto;
 }
