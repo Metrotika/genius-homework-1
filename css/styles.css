@@ -503,7 +503,7 @@ h2{
     pointer-events: none;
 }
 .modal{
-    color: white; /*delete*/
+    color: var(--color-main-light);
     position: relative;
     width: 100%;
     max-width: 723px;
@@ -522,7 +522,7 @@ h2{
     position: absolute;
     width: 32px;
     height: 32px;
-    padding: ;
+    padding: 0px;
     top: 42px;
     right: 42px;
     border: 0px;
