@@ -49,29 +49,36 @@
                         косметолога</p>
                 </div>
             </section>
-            <div class="conteiner-about-as">
-                <section class="about-as-section-flex" id="about-as">
-                    <div class="about-as-text-conteiner-flex">
-                        <h2>Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span></h2>
-                        <p>Наша косметологічна клініка пропонує вам професійні послуги
-                            з догляду за шкірою обличчя та тіла.</p>
-                        <p>B <span class="accent-bold" lang="en">beauty zone</span> ми
-                            гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та
-                            препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
-                        </p>
+            <section class="about-as-section-flex" id="about-as">
+                <div class="about-as-text-conteiner-flex">
+                    <h2>Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span></h2>
+                    <p>Наша косметологічна клініка пропонує вам професійні послуги
+                        з догляду за шкірою обличчя та тіла.</p>
+                    <p>B <span class="accent-bold" lang="en">beauty zone</span> ми
+                        гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та
+                        препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
+                    </p>
+                </div>
+                <div class="about-as-imgs-conteiner-flex">
+                    <div class="face-before-procedure">
+                        <img class="face-procedure-img-raund" src="./images/face-before-procedure.jpg"
+                            alt="не красиве обличчя дівчини до процедури">
                     </div>
-                    <div class="about-as-imgs-conteiner-flex">
-                        <div class="face-before-procedure">
-                            <img class="face-before-procedure-img" src="./images/face-before-procedure.jpg"
-                                alt="не красиве обличчя дівчини до процедури">
-                        </div>
-                        <div class="face-after-procedure">
-                            <img class="face-after-procedure-img" src="./images/face-after-procedure.jpg"
-                                alt="красиве обличчя дівчини після процедури">
-                        </div>
+                    <div class="face-after-procedure">
+                        <img class="face-procedure-img-raund" src="./images/face-after-procedure.jpg"
+                            alt="красиве обличчя дівчини після процедури">
                     </div>
-                </section>
-            </div>
+                    <svg class="star-1-big" width="64" height="64">
+                        <use href="./images/icons.svg#icon-star-1"></use>
+                    </svg>
+                    <svg class="star-2-middle" width="40" height="40">
+                        <use href="./images/icons.svg#icon-star-2"></use>
+                    </svg>
+                    <svg class="star-3-little" width="16" height="16">
+                        <use href="./images/icons.svg#icon-star-3"></use>
+                    </svg>
+                </div>
+            </section>
             <section class="why-we-section" id="why-we">
                 <div class="conteiner-why-we">
                     <h2 class="why-we-title">Чому люди <br /> <span class="accent">обирають нас</span></h2>
@@ -177,24 +184,24 @@
                             <h3 class="form-title">Запишіться <span class="accent">безкоштовно</span> <br> та отримайте
                                 подарунок
                             </h3>
-                            <form name="contact-form" autocomplete="off" novalidate>
+                            <form name="contact-form" autocomplete="off">
                                 <div class="contact-form-field">
                                     <label class="form-label visually-hidden" for="user-name">Ім'я</label>
                                     <input class="form-input" type="text" name="user-name" id="user-name"
-                                        placeholder="Ім'я">
+                                        placeholder="Ім'я" required>
                                 </div>
                                 <div class="contact-form-field">
                                     <label class="form-label visually-hidden" for="user-tel">Телефон</label>
                                     <input class="form-input" type="tel" name="user-tel" id="user-tel"
-                                        placeholder="Телефон">
+                                        placeholder="Телефон" required>
                                 </div>
                                 <div class="contact-form-field">
                                     <label class="form-label visually-hidden" for="user-email">Пошта</label>
                                     <input class="form-input" type="email" name="user-email" id="user-email"
-                                        placeholder="Пошта">
+                                        placeholder="Пошта" required>
                                 </div>
                             </form>
-                            <button class="second-big-button" type="button">Записатись безкоштовно</button>
+                            <button class="second-big-button" type="submit">Записатись безкоштовно</button>
                             <p class="clarifying">Натискаючи на кнопку я погоджуюсь з
                                 <a class="clarifying-the-privacy-policy" href="#"> політикою конфіденційності</a>
                             </p>
@@ -267,21 +274,25 @@
                     Запишіться <span class="accent">безкоштовно</span> <br>
                     та отримайте подарунок
                 </p>
-                <form name="contact-form" autocomplete="off" novalidate>
+                <form name="contact-form" autocomplete="off">
                     <div class="form-field">
                         <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-                        <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+                        <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я"
+                            required pattern="^([A-ZÀ-ÿ-,a-z. ']+[ ]*)">
+                        <!-- required pattern="^[a-zA-Zа-яА-ЯіІ'-]+ [a-zA-Zа-яА-ЯіІ'-]+$"> -->
                     </div>
                     <div class="form-field">
                         <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                        <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+                            required pattern="+38[0-9]{10}">
                     </div>
                     <div class="form-field">
                         <label class="form-label visually-hidden" for="user-email">Пошта</label>
-                        <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Пошта">
+                        <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Пошта"
+                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="example@mail.com">
                     </div>
+                    <button class="second-big-button button-form-align" type="submit">Записатись безкоштовно</button>
                 </form>
-                <button class="second-big-button button-form-align" type="submit">Записатись безкоштовно</button>
                 <p class="clarifying">Натискаючи на кнопку я погоджуюсь з
                     <a class="clarifying-the-privacy-policy" href="#"> політикою конфіденційності</a>
                 </p>

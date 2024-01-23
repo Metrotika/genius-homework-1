@@ -71,10 +71,10 @@ ul {
 a {
     text-decoration: none;
     display: inline-block;
-    transition: color 0.3s, fill 0.3s;
+    transition: color 0.2s, fill 0.2s;
 }
 button {
-    transition: fill 0.3s, color 0.3s, background-color 0.3s, border 0.3s;
+    transition: fill 0.2s, color 0.2s, background-color 0.2s, border 0.2s;
 
 }
 /*Header*/
@@ -97,7 +97,6 @@ button {
 .header-telephone-button:hover{
     fill: var(--color-main-accent)
 }
-
 .social-icons{
     fill: var(--color-main-dark);
 }
@@ -176,11 +175,8 @@ button {
     max-width: 238px;
 }
 /*About-as-section*/
-.conteiner-about-as{
-    margin: 0px 100px;
-    margin-bottom: 176px;
-}
 .about-as-section-flex {
+    padding: 0 100px 176px 100px;
     font-size: 22px;
     line-height: 1.73;
     display: flex;
@@ -194,30 +190,62 @@ button {
     flex-basis: 709px;
 }
 .about-as-imgs-conteiner-flex{
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     flex-basis: 503px;
     height: 695px;
     align-content: space-between;
     flex-grow: 0;
-    /* background-image: url(""); */
 }
+.star-1-big{
+    position: absolute;
+    top: 347px;
+    left: 136px;
+    fill: var(--color-main-dark);
+    animation: pulsar 1.5s linear 0s infinite alternate;
+}
+.star-2-middle{
+    position: absolute;
+    top: 32px;
+    left: 471px;
+    fill: var(--color-main-accent);
+    animation: pulsar 1.5s linear 1s infinite alternate;
+}
+.star-3-little{
+    position: absolute;
+    top: 270px;
+    left: 472px;
+    fill: var(--color-secondary-light-gray);
+    animation: pulsar 1.5s linear .5s infinite alternate;
+}
+@keyframes pulsar{
+    0%{
+        transform: scale(1.0);
+        fill: var(--color-main-dark);
+    }
+    100%{
+        transform: scale(1.25);
+        fill: var(--color-main-accent);
+    }
+}
+
 .face-before-procedure{
     display: flex;
     flex-basis: 100%;
     justify-self: start;
-}
-.face-before-procedure-img{
-    border-radius: 50%;
+    z-index: 1;
 }
 .face-after-procedure{
     display: flex;
     flex-basis: 100%;
     justify-content: end;
+    z-index: 1;
 }
-.face-after-procedure-img{
-border-radius: 50%;
+.face-procedure-img-raund{
+    border-radius: 50%;
 }
+
 h2{
     font-family: "Play", sans-serif;
     font-size: 64px;
@@ -251,7 +279,7 @@ h2{
     padding: 24px 32px;
     flex-basis: 316px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 .formats-item:hover{
     transform: scale(1.1);
@@ -291,7 +319,7 @@ h2{
     padding: 24px 32px;
     background-image: linear-gradient(180deg, #011c4400 48%, #011c44ba 84%, #011C44 100%);
     border-radius: 4px 120px;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 .formats-item-proceddures:hover{
     transform: scale(1.05);
@@ -495,7 +523,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.2s, visibility 0.2s;
 }
 .backdrop.is-hidden{
     opacity: 0;
