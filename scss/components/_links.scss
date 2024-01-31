@@ -1,0 +1,33 @@
+.header-link {
+    color: var(--color-main-dark);
+    line-height: 1.17;
+}
+
+.header-link:hover {
+    color: var(--color-main-accent);
+}
+.footer-svg-social-link {
+    fill: var(--color-main-light);
+}
+
+.footer-svg-social-link:hover {
+    fill: var(--color-main-accent);
+}
+
+.link-bottom-nav {
+    color: var(--color-main-light);
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 400;
+}
+
+.link-bottom-nav:hover {
+    color: var(--color-main-accent);
+}
+.social-icons {
+    fill: var(--color-main-dark);
+}
+
+.social-icons:hover {
+    fill: var(--color-main-accent);
+}

@@ -1,0 +1,40 @@
+.conteiner-why-we {
+    margin-bottom: 96px;
+}
+
+.why-we-title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.formats-list-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+    justify-content: center;
+}
+
+.formats-item {
+    background-color: var(--color-main-light);
+    border-radius: 32px;
+    padding: 24px 32px;
+    flex-basis: 316px;
+    text-align: center;
+    // transition: transform 0.2s;
+}
+
+// .formats-item:hover {
+    // transform: scale(1.1);
+// }
+
+.formats-article {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-for-our-advantages {
+    color: var(--color-secondary-black);
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 400;
+}
