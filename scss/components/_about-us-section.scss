@@ -1,0 +1,40 @@
+.about-us-section {
+  &__conteiner {
+    padding: 0 100px 176px 100px;
+    font-size: 22px;
+    line-height: 1.73;
+    display: flex;
+    gap: 28px;
+  }
+
+  &__text-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    flex-basis: 709px;
+  }
+  &__imgs-conteiner {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 503px;
+    height: 695px;
+    align-content: space-between;
+    flex-grow: 0;
+  }
+
+  &__face-before-procedure {
+    display: flex;
+    flex-basis: 100%;
+    justify-self: start;
+    z-index: 1;
+  }
+
+  &__face-after-procedure {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: end;
+    z-index: 1;
+  }
+}

@@ -1,40 +1,43 @@
-.our-procedures-conteiner {
+.our-procedures-section {
+  &__conteiner {
     margin: 0 auto 96px auto;
     padding: 0px 112px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 48px;
-}
+  }
 
-.our-procedures-title {
-    text-align: center;
-}
-.carousel-conteiner{
+  &__carousel-conteiner {
     display: flex;
     flex-direction: row;
     gap: 32px;
     align-items: center;
     width: 100%;
-}
+  }
 
-.formats-list-procedures {
+  &__list {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 100%;
     gap: 16px;
     justify-content: center;
-}
+  }
 
-.formats-item-proceddures {
+  &__item {
     height: 456px;
     flex-basis: 344px;
-    background-image: linear-gradient(180deg, #011c4400 48%, #011c44ba 84%, #011C44 100%);
+    background-image: linear-gradient(
+      180deg,
+      #011c4400 48%,
+      #011c44ba 84%,
+      #011c44 100%
+    );
     border-radius: 4px 120px;
     overflow: hidden;
-}
+  }
 
-.format-card-procedures{
+  &__card {
     display: flex;
     position: relative;
     width: 100%;
@@ -42,9 +45,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
+  }
 
-.format-image{
+  &__image {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,9 +55,9 @@
     height: 100%;
     border-radius: 4px 120px;
     z-index: -1;
-}
+  }
 
-.text-for-our-procedures {
+  &__card-text {
     color: var(--color-main-light);
     font-size: 22px;
     line-height: 1.19;
@@ -63,4 +66,5 @@
     margin-left: 115px;
     margin-bottom: 32px;
     text-align: center;
+  }
 }

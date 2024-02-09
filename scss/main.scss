@@ -3,11 +3,16 @@
 
 @import './base';
 
+@import './utils/raund';
+@import './utils/stars';
+@import './utils/texts';
+@import './utils/titels';
 @import './utils/utils';
 
-@import './components/about-as-section';
+@import './components/about-us-section';
 @import './components/backdrop';
 @import './components/buttons';
+@import './components/carousel-button';
 @import './components/contacts-section';
 @import './components/footer';
 @import './components/header';
@@ -16,7 +21,3 @@
 @import './components/our-procedures-section';
 @import './components/root-conteiner';
 @import './components/why-we-section';
-
-
-
-

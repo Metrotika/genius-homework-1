@@ -1,66 +1,65 @@
 .conteiner-contacts {
-    margin-bottom: 96px;
+  margin-bottom: 96px;
 }
 
 .contakts-title {
-    margin-bottom: 48px;
-    text-align: center;
+  margin-bottom: 48px;
 }
 
 .conteiner-contacts-map-and-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
 }
 
 .contact-section_map {
-    border: 0px;
-    border-radius: 32px;
+  border: 0px;
+  border-radius: 32px;
 }
 /* form */
 .contacts-form-flex {
-    display: flex;
-    flex-basis: 423px;
-    max-height: 481px;
-    flex-direction: column;
-    padding: 44px 56px;
-    border-radius: 32px;
-    background-color: var(--color-main-dark);
-    background-image: url("../images/contacts-form-backgraund.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  flex-basis: 423px;
+  max-height: 481px;
+  flex-direction: column;
+  padding: 44px 56px;
+  border-radius: 32px;
+  background-color: var(--color-main-dark);
+  background-image: url('../images/contacts-form-backgraund.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .form-title {
-    font-family: "Roboto", sans-serif;
-    font-size: 22px;
-    line-height: 1.19;
-    font-weight: 700;
-    color: var(--color-main-light);
-    text-align: center;
-    margin-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 1.19;
+  font-weight: 700;
+  color: var(--color-main-light);
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .contact-form-field {
-    margin-bottom: 16px;
-    max-height: 52px;
+  margin-bottom: 16px;
+  max-height: 52px;
 }
 
 .clarifying {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    color: var(--color-secondary-light-gray);
-    font-size: 12px;
-    line-height: 1.5;
-    font-weight: 400;
-    max-width: 213px;
-    text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  color: var(--color-secondary-light-gray);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 213px;
+  text-align: center;
 }
 
 .clarifying-the-privacy-policy {
-    color: var(--color-secondary-light-gray);
-    text-decoration: underline;
+  color: var(--color-secondary-light-gray);
+  text-decoration: underline;
 }
