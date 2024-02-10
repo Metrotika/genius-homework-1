@@ -140,6 +140,9 @@ button {
   line-height: 1.16;
   font-weight: 700;
 }
+.title--bottom-spase {
+  margin-bottom: 48px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -218,7 +221,18 @@ button {
   background-position: center;
   overflow-y: auto;
 }
-.backdrop .modal-btn-close {
+.backdrop__modal-title--moved {
+  margin-bottom: 40px;
+}
+.backdrop__modal-text {
+  font-size: 22px;
+  line-height: 1.18;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modal-btn-close {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -229,16 +243,6 @@ button {
   background-color: transparent;
   fill: transparent;
   cursor: pointer;
-}
-.backdrop__modal-title--moved {
-  margin-bottom: 40px;
-}
-.backdrop__modal-text {
-  font-size: 22px;
-  line-height: 1.18;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 32px;
 }
 
 .is-hidden {
@@ -263,26 +267,6 @@ button {
 }
 .order-button:hover {
   background-color: transparent;
-}
-
-.footer-social-media-buttons-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: start;
-}
-
-.footer-telephone-button {
-  cursor: pointer;
-  width: 42px;
-  height: 42px;
-  background-color: transparent;
-  padding: 0;
-  border: 0px;
-}
-
-.footer-telephone-button:hover {
-  fill: var(--color-main-accent);
 }
 
 .clarifying {
@@ -326,9 +310,6 @@ button {
 .contacts-secton__conteiner {
   margin-bottom: 96px;
 }
-.contacts-secton__title {
-  margin-bottom: 48px;
-}
 .contacts-secton__map-conteiner {
   display: flex;
   flex-wrap: wrap;
@@ -362,30 +343,6 @@ button {
   margin-bottom: 32px;
 }
 
-.conteiner-footer-flex {
-  padding: 56px 0;
-  display: flex;
-  flex-basis: 1239px;
-  gap: 186px;
-  justify-content: center;
-}
-
-.footer-columns-size {
-  flex-basis: 203px;
-}
-
-.formated-hreaf-list-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.copyright {
-  color: var(--color-secondary-dark-gray);
-  font-size: 13px;
-  line-height: 1.15;
-}
-
 .footer {
   position: relative;
   background-color: var(--color-main-dark);
@@ -394,7 +351,6 @@ button {
   background-size: cover;
   background-position: center;
 }
-
 .footer::after {
   position: absolute;
   width: 278px;
@@ -404,6 +360,58 @@ button {
   background-repeat: no-repeat;
   background-image: url("../images/bottom-pipette.png");
   content: "";
+}
+.footer__conteiner {
+  padding: 56px 0;
+  display: flex;
+  flex-basis: 1239px;
+  gap: 186px;
+  justify-content: center;
+}
+.footer__columns--limited {
+  flex-basis: 203px;
+}
+.footer__link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__link {
+  color: var(--color-main-light);
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 400;
+}
+.footer__link:hover {
+  color: var(--color-main-accent);
+}
+.footer__copyright {
+  color: var(--color-secondary-dark-gray);
+  font-size: 13px;
+  line-height: 1.15;
+}
+.footer__link-svg {
+  fill: var(--color-main-light);
+}
+.footer__link-svg:hover {
+  fill: var(--color-main-accent);
+}
+.footer__social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: start;
+}
+.footer__telephone-button {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  padding: 0;
+  border: 0px;
+}
+.footer__telephone-button:hover {
+  fill: var(--color-main-accent);
 }
 
 .contact-form__input-conteiner {
@@ -520,32 +528,10 @@ button {
   text-align: center;
 }
 
-.footer-svg-social-link {
-  fill: var(--color-main-light);
-}
-
-.footer-svg-social-link:hover {
-  fill: var(--color-main-accent);
-}
-
-.link-bottom-nav {
-  color: var(--color-main-light);
-  font-size: 16px;
-  line-height: 1.19;
-  font-weight: 400;
-}
-
-.link-bottom-nav:hover {
-  color: var(--color-main-accent);
-}
-
 .our-procedures-section__conteiner {
   margin: 0 auto 96px auto;
   padding: 0px 112px;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
 }
 .our-procedures-section__carousel-conteiner {
   display: flex;
@@ -611,9 +597,6 @@ button {
 
 .why-we-section__conteiner {
   margin-bottom: 96px;
-}
-.why-we-section__title_positioned {
-  margin-bottom: 48px;
 }
 .why-we-section__list {
   display: flex;

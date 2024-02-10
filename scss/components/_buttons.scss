@@ -15,23 +15,3 @@
     background-color: transparent;
   }
 }
-
-.footer-social-media-buttons-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: start;
-}
-
-.footer-telephone-button {
-  cursor: pointer;
-  width: 42px;
-  height: 42px;
-  background-color: transparent;
-  padding: 0;
-  border: 0px;
-}
-
-.footer-telephone-button:hover {
-  fill: var(--color-main-accent);
-}
