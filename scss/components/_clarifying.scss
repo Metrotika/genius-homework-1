@@ -1,0 +1,15 @@
+.clarifying {
+  display: block;
+  margin: 0 auto;
+  color: var(--color-secondary-light-gray);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 213px;
+  text-align: center;
+
+  &__link {
+    color: var(--color-secondary-light-gray);
+    text-decoration: underline;
+  }
+}

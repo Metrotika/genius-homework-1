@@ -1,0 +1,36 @@
+.contact-form {
+  &__input-conteiner {
+    max-height: 52px;
+
+    &--backdrop-limited {
+      padding: 0 62px;
+      margin-bottom: 24px;
+    }
+
+    &--contacts-limited {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__input {
+    padding: 18px 32px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-light-gray);
+    border-radius: 32px;
+    background-color: transparent;
+    color: var(--color-main-light);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.15;
+    font-weight: 400;
+
+    &:focus {
+      background-color: var(--color-secondary-light-gray);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-main-light);
+    }
+  }
+}
