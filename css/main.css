@@ -202,14 +202,7 @@ button {
   transition: opacity 0.2s, visibility 0.2s;
   z-index: 2;
 }
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.modal {
+.backdrop__modal {
   color: var(--color-main-light);
   position: relative;
   width: 100%;
@@ -225,8 +218,7 @@ button {
   background-position: center;
   overflow-y: auto;
 }
-
-.modal-btn-close {
+.backdrop .modal-btn-close {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -238,17 +230,21 @@ button {
   fill: transparent;
   cursor: pointer;
 }
-
-.modal-title {
+.backdrop__modal-title--moved {
   margin-bottom: 40px;
 }
-
-.call-to-action-text {
+.backdrop__modal-text {
   font-size: 22px;
   line-height: 1.18;
   font-weight: 700;
   text-align: center;
   margin-bottom: 32px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .order-button {
@@ -366,7 +362,6 @@ button {
   margin-bottom: 32px;
 }
 
-/*Footer*/
 .conteiner-footer-flex {
   padding: 56px 0;
   display: flex;
