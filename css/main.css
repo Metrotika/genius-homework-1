@@ -155,6 +155,92 @@ button {
   overflow: hidden;
 }
 
+.order-button {
+  display: block;
+  margin: 0 auto 8px auto; /*different margin to hero-section-butt and form-butt */
+  padding: 16px 32px;
+  color: var(--color-main-light);
+  background-color: var(--color-main-accent);
+  border: 2px solid var(--color-main-accent);
+  border-radius: 32px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+}
+.order-button:hover {
+  background-color: transparent;
+}
+
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid var(--color-main-dark);
+  fill: var(--color-main-dark);
+  background-color: var(--color-main-light);
+  cursor: pointer;
+}
+.carousel-button:hover {
+  border: 1px solid var(--color-main-light);
+  background-color: var(--color-main-accent);
+  fill: var(--color-main-light);
+}
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+
+.clarifying {
+  display: block;
+  margin: 0 auto;
+  color: var(--color-secondary-light-gray);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 213px;
+  text-align: center;
+}
+.clarifying__link {
+  color: var(--color-secondary-light-gray);
+  text-decoration: underline;
+}
+
+.contact-form__input-conteiner {
+  max-height: 52px;
+}
+.contact-form__input-conteiner--backdrop-limited {
+  padding: 0 62px;
+  margin-bottom: 24px;
+}
+.contact-form__input-conteiner--contacts-limited {
+  margin-bottom: 16px;
+}
+.contact-form__input {
+  padding: 18px 32px;
+  width: 100%;
+  border: 1px solid var(--color-secondary-light-gray);
+  border-radius: 32px;
+  background-color: transparent;
+  color: var(--color-main-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+.contact-form__input:focus {
+  background-color: var(--color-secondary-light-gray);
+  outline: none;
+}
+.contact-form__input::placeholder {
+  color: var(--color-main-light);
+}
+
 .about-us-section__conteiner {
   padding: 0 100px 176px 100px;
   font-size: 22px;
@@ -205,7 +291,13 @@ button {
   transition: opacity 0.2s, visibility 0.2s;
   z-index: 2;
 }
-.backdrop__modal {
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
   color: var(--color-main-light);
   position: relative;
   width: 100%;
@@ -221,18 +313,7 @@ button {
   background-position: center;
   overflow-y: auto;
 }
-.backdrop__modal-title--moved {
-  margin-bottom: 40px;
-}
-.backdrop__modal-text {
-  font-size: 22px;
-  line-height: 1.18;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.modal-btn-close {
+.modal__btn-close {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -244,67 +325,15 @@ button {
   fill: transparent;
   cursor: pointer;
 }
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.modal__title--moved {
+  margin-bottom: 40px;
 }
-
-.order-button {
-  display: block;
-  margin: 0 auto 8px auto; /*different margin to hero-section-butt and form-butt */
-  padding: 16px 32px;
-  color: var(--color-main-light);
-  background-color: var(--color-main-accent);
-  border: 2px solid var(--color-main-accent);
-  border-radius: 32px;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
+.modal__text {
+  font-size: 22px;
+  line-height: 1.18;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-}
-.order-button:hover {
-  background-color: transparent;
-}
-
-.clarifying {
-  display: block;
-  margin: 0 auto;
-  color: var(--color-secondary-light-gray);
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 400;
-  max-width: 213px;
   text-align: center;
-}
-.clarifying__link {
-  color: var(--color-secondary-light-gray);
-  text-decoration: underline;
-}
-
-.carousel-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
-  border: 1px solid var(--color-main-dark);
-  fill: var(--color-main-dark);
-  background-color: var(--color-main-light);
-  cursor: pointer;
-}
-.carousel-button:hover {
-  border: 1px solid var(--color-main-light);
-  background-color: var(--color-main-accent);
-  fill: var(--color-main-light);
-}
-.carousel-button.next {
-  transform: rotate(180deg);
+  margin-bottom: 32px;
 }
 
 .contacts-secton__conteiner {
@@ -412,36 +441,6 @@ button {
 }
 .footer__telephone-button:hover {
   fill: var(--color-main-accent);
-}
-
-.contact-form__input-conteiner {
-  max-height: 52px;
-}
-.contact-form__input-conteiner--backdrop-limited {
-  padding: 0 62px;
-  margin-bottom: 24px;
-}
-.contact-form__input-conteiner--contacts-limited {
-  margin-bottom: 16px;
-}
-.contact-form__input {
-  padding: 18px 32px;
-  width: 100%;
-  border: 1px solid var(--color-secondary-light-gray);
-  border-radius: 32px;
-  background-color: transparent;
-  color: var(--color-main-light);
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  line-height: 1.15;
-  font-weight: 400;
-}
-.contact-form__input:focus {
-  background-color: var(--color-secondary-light-gray);
-  outline: none;
-}
-.contact-form__input::placeholder {
-  color: var(--color-main-light);
 }
 
 .header__conteiner {
